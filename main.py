@@ -33,7 +33,7 @@ BLOCK_HEIGHT = 20
 # blocks settings
 block_list = [Block(BLOCKS_MARGIN_LEFT + (BLOCK_WIDTH + BLOCK_DISTANCE_X) * i,
                           BLOCKS_MARGIN_TOP + (BLOCK_HEIGHT + BLOCK_DISTANCE_Y) * j,
-                          BLOCK_WIDTH, BLOCK_HEIGHT, (rnd(30, 256), rnd(30, 256), rnd(30, 256)))
+                          BLOCK_WIDTH, BLOCK_HEIGHT, pygame.Color('lightblue'))
               for i in range(20) for j in range(8)]
 
 pygame.init()
